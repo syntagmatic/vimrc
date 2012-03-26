@@ -1,12 +1,15 @@
-" Pathogen
-filetype off        " Hack, reloaded later
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+Bundle 'kchmck/vim-coffee-script'
 
 " Configuration file for vim
 set modelines=0     " CVE-2007-2438
 
-set nocompatible    " Use Vim defaults instead of 100% vi compatibility
 set backspace=2     " more powerful backspacing
 
 " Don't write backup file if vim is being called by "crontab -e"
@@ -29,6 +32,8 @@ autocmd BufReadPost *
 \ endif |
 \ endif
 
+colorscheme maroloccio
+
 set tabstop=2
 set expandtab
 set shiftwidth=2
@@ -39,3 +44,4 @@ set wildmode=list:longest,full
 
 map <Tab> :bn<CR>
 map <C-Tab> :bp<CR>
+
