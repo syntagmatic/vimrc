@@ -32,7 +32,9 @@ autocmd BufReadPost *
 \ endif |
 \ endif
 
-colorscheme maroloccio
+set t_Co=256
+colorscheme wombat256
+set background=dark
 
 set tabstop=2
 set expandtab
