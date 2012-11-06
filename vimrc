@@ -32,9 +32,7 @@ autocmd BufReadPost *
 \ endif |
 \ endif
 
-set t_Co=256
-colorscheme wombat256
-set background=dark
+colorscheme pyte
 
 set tabstop=2
 set expandtab
