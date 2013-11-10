@@ -45,3 +45,5 @@ set wildmode=list:longest,full
 map <Tab> :bn<CR>
 map <C-Tab> :bp<CR>
 
+map ; :
+map \ :syntax sync fromstart<CR>
