@@ -1,12 +1,6 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-
-Bundle 'kchmck/vim-coffee-script'
-
 " Configuration file for vim
 set modelines=0     " CVE-2007-2438
 
@@ -31,8 +25,6 @@ autocmd BufReadPost *
 \ exe "normal g'\"" |
 \ endif |
 \ endif
-
-colorscheme pyte
 
 set tabstop=2
 set expandtab
