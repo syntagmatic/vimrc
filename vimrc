@@ -15,7 +15,17 @@ set ai                    " auto indenting
 set history=100           " keep 100 lines of history
 set ruler                 " show the cursor position
 syntax on                 " syntax highlighting
-set hlsearch              " highlight the last searched term
+
+set incsearch             " search as characters are entered
+set hlsearch              " highlight matches
+
+let mapleader=","       " leader is comma
+" turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+
+" jk is escape
+inoremap jk <esc>
+
 filetype plugin indent on " use the file type plugins
 
 " When editing a file, always jump to the last cursor position
