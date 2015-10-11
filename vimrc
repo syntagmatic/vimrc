@@ -19,13 +19,6 @@ syntax on                 " syntax highlighting
 set incsearch             " search as characters are entered
 set hlsearch              " highlight matches
 
-let mapleader=","       " leader is comma
-" turn off search highlight
-nnoremap <leader><space> :nohlsearch<CR>
-
-" jk is escape
-inoremap jk <esc>
-
 filetype plugin indent on " use the file type plugins
 
 " When editing a file, always jump to the last cursor position
